@@ -1,0 +1,8 @@
+<%- include('layout') %>
+
+<h1>Lista de Materias</h1>
+<ul>
+  <% materias.forEach(materia => { %>
+    <li><%= materia.nombre %> - <%= materia.area.nombre %></li>
+  <% }) %>
+</ul>
